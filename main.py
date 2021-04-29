@@ -9,7 +9,7 @@ def sendAddresses(v):
 	#to connect next
 	 lst = [g for g,j in v.nodes.iteritems()]
 	 l = len(lst)
-	 print "Closing..."
+	 print ("Closing...")
 	 for i in range(0,l):
 	 	tmp_pac = LinkPacket()
 	 	tmp_pac.setMessageByFields(
@@ -28,9 +28,9 @@ while 1:
 	if comm=="n":
 		#display neigbhours and 2-hop neighbours
 		for n in a.nodes:
-			print 'Via:',n
+			print ('Via:',n)
 			for i in a.nodes[n].neighbours:
-				print i,
+				print (i),
 			print
 
 	elif comm=="s":
